@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Inter',system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E7F6FF;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+h1, p {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 2px solid #EAEAEA;
+  h3, p {
+    margin: 0;
+  }
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.headerRight {
+  display: flex;
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.headerTitle {
+  text-transform: uppercase;
+}
+.headerCartIco {
+  margin-right: 15px;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.content {
+  padding: 40px;
+}
+
+.card {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+  padding: 29px;
+  width: 210px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  &:hover { 
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-5px);
+  }
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 100%;
+  cursor: pointer;
+  font-family: 'Inter',system-ui;
+  transition: all .3s;
+  &:hover:enabled  {
+    border: 1px solid red;
+  }
+}
+
+.favorite {
+  position: absolute;
+  cursor: pointer;
+}
+
+.sneakers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 53px;
+  padding: 30px 0
+}
+
+.contentTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.active {
+  background-color: red;
+}
+
+@media screen and (max-width: 400px) {
+  .headerInfo{
+    font-size: 12px;
+  }
+  .sneakers {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  
+  .sneakers {
+    justify-content: center;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
